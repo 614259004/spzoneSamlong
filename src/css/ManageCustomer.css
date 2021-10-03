@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+
+.bodyCustomer{
+    margin-top: 4%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.cardCustomer{
+    width: 330px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'Prompt', sans-serif;
+}
+
+.cardCustomer:hover{
+    background: rgb(44,44,44);
+    color: white;
+}
+
+.cardCustomer
+
+.cardImgCustomer{
+    width: 20%;
+   
+}
+
+.cardCustomer img{
+    border-radius: 50%;
+    width: 70%;
+    box-shadow: rgba(22, 22, 22, 0.24) 0px 3px 8px;
+}
+
+.cardCustomer p{
+   width: 70%;
+   padding-top: 12px;
+   font-weight: bold;
+}
+
+.IconCustomerAdmin{
+    width: 10%;
+    padding-top: 15px;
+}
+
+
+
+/* Modal */
+.Modal_Ban_Customer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal_Ban_Customer.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.Modal_Ban_Customer_body{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 400px;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.boxOfBanCusgroup button{
+    width: 30%;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    color: rgba(175, 175, 175, 0.904);
+    padding: 6px;
+    cursor: pointer;
+    background: rgb(240, 239, 239);
+    border: rgb(211, 211, 211);
+    border-radius: 15px;
+}
+
+.boxOfBanCusgroup button:hover{
+    background-color: rgb(31, 30, 30);
+    color: rgb(253, 253, 253);
+}
+
+.boxOfBanCusgroup{
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    margin-left: 15%;
+    justify-content: space-around;
+}
+/* Modal */
+
+/* .Head-brand select{
+    width: 120px;
+    border-color: rgb(228, 228, 228);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    color: #a1a1a1;
+    font-size: 16px;
+    margin-left: 76.5%;
+    padding: 1px 8px;
+} */
+
+details {
+	position: relative;
+	width: 130px;
+	/* margin-right: 1rem; */
+    margin-left: 74%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+details[open] {
+	z-index: 1;
+}
+
+.AdminCussummary{
+    margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgb(207, 207, 207);
+    list-style: none;
+    padding-left: 16.5px;
+}
+
+.AdminCussummary::-webkit-details-marker {
+	display: none;
+}
+
+details[open] .AdminCussummary:before {
+	content: '';
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.AdminCussummary:after {
+	content: '';
+	display: inline-block;
+	float: right; 
+	width: .5rem;
+	height: .5rem;
+	border-bottom: 1px solid currentColor;
+	border-left: 1px solid currentColor;
+	border-bottom-left-radius: 2px;
+	transform: rotate(45deg) translate(50%, 0%);
+	transform-origin: center center;
+	transition: transform ease-in-out 100ms
+}
+
+.AdminCussummary:focus {
+	outline: none;
+}
+
+details[open] .AdminCussummary:after {
+	transform: rotate(-45deg) translate(0%, 0%);
+}
+
+.detailsAdminCus ul {
+	width: 100%;
+	background: rgb(207, 207, 207);
+	position: absolute;
+	top: calc(100% + .5rem);
+	left: 0;
+	padding: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.detailsAdminCus li {
+	margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgb(207, 207, 207);
+    list-style: none;
+}
+
+.detailsAdminCus li:first-child {
+	padding-top: 0;
+}
+
+.detailsAdminCus li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+

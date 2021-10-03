@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.Product-card-layout-show{
+    margin-top: 4%;
+    max-width:80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    row-gap: 55px;
+    font-family: 'Prompt', sans-serif;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    z-index: -1;
+    position: absolute;
+    
+}
+
+.Product-show-font-card{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: .8s;
+    
+}
+
+.Product-show-font-card:hover{
+    filter: grayscale(0%);
+}
+
+.Product-img-show-font{
+    width: 385px;
+    height: 385px;
+}
+
+.Product-img-show-font img{
+    width: 100%;
+    
+}
+
+.Product-name-font-h2{
+    margin-top: 20px;
+}
+
+.Product-price-font-h5{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.Link-producttoInfo{
+    text-decoration: none;
+    color: black;
+}

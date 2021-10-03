@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    /* padding: 10px; */
+    width: 80%;
+    margin-left: 13%;
+}
+.body-card{
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    height: auto;
+    margin-top: 20%;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 25px;
+}
+.body-card img{
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+/* .button{
+    padding: 15px 100px;
+    margin:10px 4px;
+    color: rgb(3, 3, 3);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+    border:1px solid transparent; 
+   -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+.button::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #000000;
+    box-shadow: inset 0px 0px 0px #000000;
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+.button:hover::before {
+    width:100%;
+}
+.button::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #000000;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+.button:hover::after {
+    width:100%;
+}
+.btn6:hover{
+    border-left:1px solid #6098FF;
+    border-right:1px solid #6098FF;
+} */
+
+.body-card h3,
+.body-card p{
+    cursor: default;
+}
+  

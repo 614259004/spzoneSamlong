@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.Orders_card_layout{
+    margin-top: 4%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.Orders_card{
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.h5_Orders_Id{
+    color: rgb(161, 161, 161);
+    cursor: default;
+}
+
+.h3_Orders_Name{
+    font-size: 23px;
+    cursor: default;
+}
+
+.order_info_group_card{
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 5px;
+    color: rgb(51, 51, 51);
+    cursor: default;
+}
+
+.data_order_info_head{
+    width: 40%;
+}
+
+.data_order_info{
+    text-align: right;
+    width: 60%;
+    padding-right: 15px;
+    /* background: #000; */
+}
+
+.data_order_info_Status{
+    text-align: right;
+    width: 60%;
+    padding-right: 15px;
+}
+
+.WaitMoney{
+    color: rgb(255, 205, 68);
+}
+
+.YesMoney{
+    color: rgb(27, 216, 27);
+}
+
+.CancleMoney{
+    color: rgb(216, 33, 27);
+}
+
+.Go_Info_Orders_button{
+    width: 100%;
+    margin-top: 15px;
+    height: 35px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    background-color: transparent;
+    color: rgb(146, 146, 146);
+    transition: .4s;
+}
+
+.Go_Info_Orders_button:hover{
+    color: white;
+    background: rgb(44, 44, 44);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.ModalInfoOrderPageAdmin{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.ModalInfoOrderPageAdmin.show{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.ModalInfoOrderPageAdmin_body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 800px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.InfoOrdersGroupAdmin{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    /* background: #000; */
+}
+
+.CloseModelInfoOrder{
+    margin-left: 90%;
+    margin-top: 2%;
+    color: silver;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.CloseModelInfoOrder:hover{
+    color: black;
+    
+}
+
+.InfoOrderMoneyImg{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 70px;
+}
+
+.InfoOrderMoneyImg img{
+    width: 300px;
+}
+
+.InfoOrderBill{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 40%;
+    background: rgb(248, 248, 248);
+    padding: 10px 30px;
+    cursor: default;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.headInFoOrderBill{
+    width: 100%;
+    text-align: left;
+    padding-top: 30px;
+    font-size: 17px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid rgb(44, 44, 44);
+}
+
+.orders_Product_detail{
+    width: 100%;
+    display: flex;
+    font-size: 13.5px;
+    margin-top: 15px;
+}
+
+.P_OrderDetail_Name{
+    width: 70%;
+    text-align: left;
+    color: rgb(163, 163, 163);
+}
+
+.P_OrderDetail_Price{
+    width: 30%;
+    text-align: right;
+}
+
+.orders_detail_body{
+    margin-top: 30px;
+    
+}
+
+.orders_Product_Total_money{
+    width: 100%;
+    font-size: 13.5px;
+    margin-top: 30px;
+    border-top: 1.5px solid rgb(44, 44, 44);
+}
+
+.P_OrderDetail_shipping{
+    width: 70%;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.P_OrderDetail_Price_shipping{
+    width: 30%;
+    text-align: right;
+}
+
+.detailCustomer_adminPage_order{
+    display: flex;
+    font-size: 13.5px;
+    width: 100%;
+}
+
+.head_cus_detailOrder{
+    width: 20%;
+    text-align: left;
+}
+
+.data_cus_detailOrder{
+    width: 80%;
+    text-align: left;
+}
+
+.OrderDataCustomerBody{
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1.5px solid rgb(44, 44, 44);
+}
+
+.Button_yes_money{
+    width: 100%;
+    height: 40px;
+    border-radius: 24px;
+    border: none;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    background: rgb(44, 44, 44);
+    color: white;
+    transition: .5s
+}
+
+.Button_yes_money:hover{
+    background-color: rgb(32, 32, 32);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.Button_No_money{
+    width: 100%;
+    height: 40px;
+    border-radius: 24px;
+    border: none;
+    margin-bottom: 15px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    background: transparent;
+    color: silver;
+    font-size: 14px;
+    transition: .5s
+}
+
+.Button_No_money:hover{
+    color: rgb(44, 44, 44);
+}
+
+.ModalInfoOrderPageAdminComfirm,
+.ModalInfoOrderPageAdminComfirm02{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.ModalInfoOrderPageAdminComfirm.show,
+.ModalInfoOrderPageAdminComfirm02.show{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.ModalInfoOrderPageAdminComfirm_body{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width:400px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.ModalInfoOrderPageAdminComfirm_body p{
+    cursor: default;
+}
+
+.button_group_comfirmCancle{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.NoCancleOrderButton{
+    width: 20%;
+    height: 40px;
+    border: none;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    transition: .5s;
+    background: none;
+    border-radius: 24px;
+    color: rgb(146, 146, 146);
+}
+
+.YesCancleOrderButton{
+    width: 20%;
+    height: 40px;
+    border: none;
+    margin-left: 10%;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    transition: .5s;
+    background: none;
+    border-radius: 24px;
+    color: rgb(146, 146, 146);
+}
+
+.NoCancleOrderButton:hover,
+.YesCancleOrderButton:hover{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+
+
+
+
+.ModaladdEmsPageAdmin{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.ModaladdEmsPageAdmin.show{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.ModaladdEmsPageAdmin_body{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width:400px;
+    padding-bottom: 20px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.trackingAdminAddGroupInput{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.trackingAdminAddGroupInput input{
+    width: 70%;
+    padding: 8px 20px;
+    outline: none;
+    border-radius: 24px ;
+    border: 2px solid silver;
+    transition: .4s;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.trackingAdminAddGroupInput input:hover,
+.trackingAdminAddGroupInput input:focus{
+    border: 2px solid rgb(44, 44, 44);
+}
+
+.trackingAdminAddButton{
+    width: 80%;
+    transition: .4s;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+}
+
+
+.trackingAdminAddButton:hover{
+    background-color: rgb(29, 29, 29);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.detailsAdminOrder{
+	position: relative;
+	width: 130px;
+	/* margin-right: 1rem; */
+    margin-left: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: -18px;
+}
+
+.detailsAdminOrder[open] {
+	z-index: 1;
+}
+
+.AdminOrdersummary{
+    margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgb(207, 207, 207);
+    list-style: none;
+    padding-left: 16.5px;
+}
+
+.AdminOrdersummary::-webkit-details-marker {
+	display: none;
+}
+
+.detailsAdminOrder[open] .AdminOrdersummary:before {
+	content: '';
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.AdminOrdersummary:after {
+	content: '';
+	display: inline-block;
+	width: .5rem;
+	height: .5rem;
+    float: right;
+	border-bottom: 1px solid currentColor;
+	border-left: 1px solid currentColor;
+	border-bottom-left-radius: 2px;
+	transform: rotate(45deg) translate(50%, 0%);
+	transform-origin: center center;
+	transition: transform ease-in-out 100ms
+}
+
+.AdminOrdersummary:focus {
+	outline: none;
+}
+
+.detailsAdminOrder[open] .AdminOrdersummary:after {
+	transform: rotate(-45deg) translate(0%, 0%);
+}
+
+.detailsAdminOrder ul {
+	width: 100%;
+	background: rgb(207, 207, 207);
+	position: absolute;
+	top: calc(100% + .5rem);
+	left: 0;
+	padding: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.detailsAdminOrder ul::-webkit-scrollbar{
+    display: none;
+}
+
+.detailsAdminOrder li {
+	margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgb(207, 207, 207);
+    list-style: none;
+}
+
+.detailsAdminOrder li:first-child {
+	padding-top: 0;
+}
+
+.detailsAdminOrder li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}

@@ -1,0 +1,1926 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+.brand-body-page{
+    margin-left: 24%;
+    margin-top: 5%;
+    padding-bottom: 50px;
+}
+
+.Head-brand {
+    display: flex;
+}
+
+.Head-brand h1{
+    cursor: default;
+}
+
+.brand-add-button{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 0px;
+    list-style: none;
+    height: 50px;
+    text-align: center;
+    margin-top: -5px;
+    margin-left: 63%;
+}
+
+.brand-add-button-cate{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 0px;
+    list-style: none;
+    height: 50px;
+    text-align: center;
+    margin-top: -5px;
+    margin-left: 69%;
+}
+
+.brand-add-button a{
+    text-decoration: none;
+    color: #a1a1a1;
+    font-size: 16px;
+    width: 95%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    transition: 0.4s; 
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.brand-add-button a:hover {
+    background: rgb(39, 39, 39);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.brand-add-button-cate a{
+    text-decoration: none;
+    color: #a1a1a1;
+    font-size: 16px;
+    width: 95%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    transition: 0.4s; 
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.brand-add-button-cate a:hover {
+    background: rgb(39, 39, 39);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+
+.Brand-card-layout{
+    margin-top: 4%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.Brand-card{
+    text-align: center;
+    width: 200px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    
+}
+
+.Brand-card-Cate{
+    text-align: center;
+    width: 250px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    display: flex;
+}
+
+.Brand-card img{
+    width: 170px;
+    height: 160px;
+    border-radius: 40px;
+}
+
+.Brand-card h5{
+    font-size: 18px;
+    margin-top: 10px;
+    text-align:left;
+    margin-left: 22px;
+    cursor: default; 
+}
+
+.Brand-card-Cate h5{
+    font-size: 18px;
+    margin-top: 10px;
+    text-align:left;
+    margin-left: 22px; 
+    width: 150px;
+    cursor: default; 
+}
+
+.button-brand-group{
+    margin-top: 10px;
+}
+
+.button-brand-group-cate{
+    margin-top: 10px;
+    text-align: right;
+    width: 60%;
+    padding-right: 12px;
+}
+
+.button-brand-group a{
+    color: rgb(179, 179, 179);
+    font-size: 14px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.button-brand-group a:hover{
+    color: rgb(32, 32, 32);
+}
+
+.button-brand-group-cate a{
+    color: rgb(179, 179, 179);
+    font-size: 14px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.button-brand-group-cate a:hover{
+    color: rgb(32, 32, 32);
+}
+
+.button-brand-group .Brand-pen{
+    margin-left: -10px;
+}
+
+.button-brand-group .Brand-bin{
+    margin-left: 50px;
+}
+
+.button-brand-group-cate .Brand-pen-cate{
+    margin-right: 0px;
+}
+
+.button-brand-group-cate .Brand-bin-cate{
+   padding-left: 10px;
+}
+
+
+/*Edit Modal*/
+
+
+#Modal-Edit-Cate{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+    animation: animate .4s linear forwards;
+}
+
+@keyframes animate{
+    100%{
+        opacity: 1;
+    }
+}
+
+#Modal-Edit-Cate .Modal-body-Cate{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 300px;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.Modal-body-Cate h1{
+    margin-top: 15px;
+}
+
+.Modal-body-Cate .ant-form{
+    width: 100%;
+}
+
+.Modal-body-Cate .ant-form .input-Cate{
+    width: 100%;
+    margin-top: 24px;
+}
+
+.Modal-body-Cate .ant-form .input-Cate input{
+    width: 70%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1.5px solid silver;
+    border-radius: 7px;
+    transition: .4s;
+}
+
+.Modal-body-Cate .ant-form .input-Cate input:focus,
+.Modal-body-Cate .ant-form .input-Cate input:valid{
+    outline: none;
+    border: 2px solid rgb(39, 39, 39);
+}
+
+.Modal-body-Cate .ant-form .input-Cate input:focus ~ label,
+.Modal-body-Cate .ant-form .input-Cate input:valid ~ label{
+    color: rgb(39, 39, 39);
+    bottom: 140px;
+    font-size: 14px;
+}
+
+.Modal-body-Cate .ant-form .input-Cate label{
+    position: absolute;
+    left: 63px;
+    pointer-events: none;
+    bottom: 108px;
+    font-size: 20px;
+    color: silver;
+    background: white;
+    transition: .4s;
+}
+
+.Modal-body-Cate .ant-form a.Close-modal-x-Cate{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: silver;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.Modal-body-Cate .ant-form a.Close-modal-x-Cate:hover{
+    color: rgb(39, 39, 39);
+}
+
+.Modal-body-Cate .ant-form .button-Cate-group{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.Modal-body-Cate .ant-form .button-Cate-group a.Close-modal-Cate{
+    text-decoration: none;
+    color: silver;
+    font-size: 16px;
+    transition: .4s;
+}
+
+.Modal-body-Cate .ant-form .button-Cate-group a.Close-modal-Cate:hover{
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+}
+
+.Modal-body-Cate .ant-form .button-Cate-group button.Save-Cate-submit{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    transition: .4s;
+    margin-left: 40px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    color: silver;
+}
+
+.Modal-body-Cate .ant-form .button-Cate-group button.Save-Cate-submit:focus{
+    outline: none;
+}
+
+.Modal-body-Cate .ant-form .button-Cate-group button.Save-Cate-submit:hover{
+    background: rgb(39, 39, 39);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+
+#Modal-Edit-Cate:target{
+    display: block;
+}
+
+/*Edit Modal*/
+
+/*Add Modal*/
+.Modal-Add-Cate{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal-Add-Cate.show{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+#Modal-Add-Cate .Modal-Add-Cate-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 300px;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.Modal-Add-Cate-body h1{
+    margin-top: 15px;
+}
+
+.Modal-Add-Cate-body .ant-form{
+    width: 100%;
+}
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add{
+    width: 100%;
+    margin-top: 35px;
+}
+
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input{
+    width: 70%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1.5px solid silver;
+    border-radius: 7px;
+    transition: .4s;
+}
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:focus,
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:valid{
+    outline: none;
+    border: 2px solid rgb(39, 39, 39);
+}
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:focus ~ label,
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:valid ~ label{
+    color: rgb(39, 39, 39);
+    bottom: 150px;
+    font-size: 14px;
+}
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add label{
+    position: absolute;
+    left: 63px;
+    pointer-events: none;
+    bottom: 120px;
+    font-size: 20px;
+    color: silver;
+    background: white;
+    transition: .4s;
+}
+
+.Modal-Add-Cate-body .ant-form a.Close-modal-x-Cate-Add{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: silver;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.Modal-Add-Cate-body .ant-form a.Close-modal-x-Cate-Add:hover{
+    color: rgb(39, 39, 39);
+}
+
+.Modal-Add-Cate-body .ant-form .button-Cate-group-Add{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.Modal-Add-Cate-body .ant-form .button-Cate-group-Add a.Close-modal-Cate-Add{
+    text-decoration: none;
+    cursor: pointer;
+    color: silver;
+    font-size: 16px;
+    transition: .4s;
+}
+
+.Modal-Add-Cate-body .ant-form .button-Cate-group-Add a.Close-modal-Cate-Add:hover{
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+}
+
+.Modal-Add-Cate-body .ant-form .button-Cate-group-Add button.Save-Cate-submit-Add{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    transition: .4s;
+    margin-left: 40px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    color: silver;
+}
+
+.Modal-Add-Cate-body .ant-form .button-Cate-group-Add button.Save-Cate-submit-Add:focus{
+    outline: none;
+}
+
+.Modal-Add-Cate-body .ant-form .button-Cate-group-Add button.Save-Cate-submit-Add:hover{
+    background: rgb(39, 39, 39);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.input-Cate-Add-img{
+    margin-top: 14px;
+}
+
+.input-Cate-Add-img img{
+    width: 85%;
+}
+
+
+#Modal-Add-Cate:target{
+    display: block;
+}
+
+/*Add Modal*/
+
+/*Delete Modal*/
+.Modal-Delete-Cate{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal-Delete-Cate.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+
+#Modal-Delete-Cate .Modal-Delete-Cate-body{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 300px;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.Modal-Delete-Cate-body .button-Cate-group-Delete{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+.Modal-Delete-Cate-body .button-Cate-group-Delete a{
+    text-decoration: none;
+    color: silver;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.Modal-Delete-Cate-body .button-Cate-group-Delete a:hover{
+    color: rgb(39, 39, 39);
+    font-weight: bold;
+}
+
+.Modal-Delete-Cate-body .button-Cate-group-Delete button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    transition: .4s;
+    margin-left: 40px;
+    padding: 6px 20px;
+    border-radius: 24px;
+    color: silver;
+}
+
+.Modal-Delete-Cate-body .button-Cate-group-Delete button:focus{
+    outline: none;
+}
+
+.Modal-Delete-Cate-body .button-Cate-group-Delete button:hover{
+    background: rgb(39, 39, 39);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+#Modal-Delete-Cate:target{
+    display: block;
+}
+
+/*Delete Modal*/
+
+
+/*card Product*/
+
+.Product-card-layout{
+    margin-top: 4%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.Product-add-button{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 0px;
+    list-style: none;
+    height: 50px;
+    text-align: center;
+    margin-top: -5px;
+    margin-left: 50%;
+}
+
+.Product-add-button a{
+    text-decoration: none;
+    color: #a1a1a1;
+    font-size: 16px;
+    width: 95%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    transition: 0.4s; 
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.Product-add-button a:hover {
+    background: rgb(39, 39, 39);
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.Product-card{
+    text-align: center;
+    width: 430px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+     
+}
+
+.Product-card img{
+    width: 180px;
+    border-radius: 15px;
+    
+}
+
+.Size-layout{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    width: 100%;
+    cursor: default;
+    margin-top: 20px;
+}
+
+.size-product{
+    text-align: center;
+   
+}
+
+.Product-card .Product-info-admin{
+    display: table;
+}
+
+.Product-card .Product-name-group{
+    margin-left: 25px;
+    text-align: left;
+    cursor: default;
+}
+
+.Product-card .Product-name-group h5{
+    font-size: 18px;
+}
+
+.Product-card .Product-name-group h6{
+    font-size: 13px;
+    color: silver;
+}
+
+.Product-name-group .greenFontStatus{
+    color: rgb(21, 196, 45);
+    font-size: 14px;
+}
+
+.Product-name-group .yellowFontStatus{
+    color: rgb(245, 223, 29);
+    font-size: 14px;
+}
+
+.Product-card .button-brand-group{
+    margin-left: 30px;
+    margin-top: 23px;
+}
+/*card Product*/
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:focus ~ h5,
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:valid ~ h5{
+    color: rgb(39, 39, 39);
+    bottom: 355px;
+    font-size: 14px;
+}
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add h5{
+    position: absolute;
+    left: 63px;
+    pointer-events: none;
+    bottom: 325px;
+    font-weight: 500;
+    font-size: 20px;
+    color: silver;
+    background: white;
+    transition: .4s;
+}
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:focus ~ h4,
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:valid ~ h4{
+    color: rgb(39, 39, 39);
+    bottom: 280px;
+    font-size: 14px;
+}
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add h4{
+    position: absolute;
+    left: 63px;
+    pointer-events: none;
+    bottom: 250px;
+    font-weight: 500;
+    font-size: 20px;
+    color: silver;
+    background: white;
+    transition: .4s;
+}
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:focus ~ h3,
+.Modal-Add-Cate-body .ant-form .input-Cate-Add input:valid ~ h3{
+    color: rgb(39, 39, 39);
+    bottom: 212px;
+    font-size: 14px;
+}
+
+.Modal-Add-Cate-body .ant-form .input-Cate-Add h3{
+    position: absolute;
+    left: 63px;
+    pointer-events: none;
+    bottom: 180px;
+    font-weight: 500;
+    font-size: 20px;
+    color: silver;
+    background: white;
+    transition: .4s;
+}
+
+
+
+
+/*input file Brand Img Add*/
+.ImgAddBrand{
+    display:none;
+}
+
+.p-name-img-brand{
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+    padding: 10px;
+    width: 230px;
+    margin-left: 23px;
+    transition: .4s;
+    border: 1.5px solid rgb(39, 39, 39);
+    border-radius: 5px;
+}
+
+.p-name-img-brand:hover{
+    color: white;
+    background-color: rgb(39, 39, 39);
+}
+
+/*input file Brand Img Add*/
+
+
+/*Product Modal*/
+.Modal-Add-Product{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal-Add-Product.show{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.Modal-Add-Product-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width:600px;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.Add-From-Product{
+    margin-top: 20px;
+}
+
+.Add-From-Product input{
+    outline: none;
+}
+
+.Add-From-Product .NameAndPrice{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    /*background: red;*/
+}
+
+.Add-From-Product .ProductInfo{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Add-From-Product .CateAndBrand{
+    display: flex;
+    text-align: left;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.Add-From-Product .PromotionProduct{
+    display: flex;
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.Add-From-Product .PromotionProduct .Promo-From-add{
+    width: 80%;
+    margin-left: 7%;
+}
+
+.PromotionProduct .Promo-From-add input{
+    width: 100%;
+    border: 2px solid rgb(211, 211, 211);
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    transition: .4s; 
+}
+
+.Promo-From-add input:focus,
+.Promo-From-add input:valid{
+    border: 2px solid rgb(39, 39, 39);
+}
+
+.PromotionProduct .Promo-From-add p{
+    font-size: 14px;
+    background-color: white;
+    position: absolute; 
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 10px;
+    margin-top: -10px;   
+    color: rgb(39, 39, 39); 
+}
+
+.Add-From-Product .CateAndBrand .Cate-From-add{
+    width: 35%;
+    margin-left: 7%;
+}
+
+.Cate-From-add select{
+    width: 100%;
+    border: 2px solid rgb(211, 211, 211);
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    transition: .4s;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+}
+
+.statusProductselect{
+    width: 83%;
+    border: 2px solid rgb(211, 211, 211);
+    font-size: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    margin-left: 7%;
+    transition: .4s;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+
+.Cate-From-add select:focus,
+.Cate-From-add select:valid,
+.statusProductselect:focus,
+.statusProductselect:valid{
+    outline: none;
+    border: 2px solid rgb(39, 39, 39);
+}
+
+.CateAndBrand p{
+    font-size: 14px;
+    background-color: white;
+    position: absolute; 
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 50px;
+    margin-top: -10px;   
+    color: rgb(39, 39, 39); 
+}
+
+.Cate-From-add p{
+    font-size: 14px;
+    background-color: white;
+    position: absolute; 
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 10px;
+    margin-top: -10px;   
+    color: rgb(39, 39, 39); 
+}
+
+.Add-From-Product .CateAndBrand .Brand-From-add{
+    width: 33%;
+    margin-left: 15%;
+}
+
+.x-add-product-from{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: silver;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.x-add-product-from:hover{
+    color: rgb(39, 39, 39);
+}
+
+.Brand-From-add select{
+    width: 100%;
+    border: 2px solid rgb(211, 211, 211);
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    transition: .4s;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+}
+
+.Brand-From-add select:focus,
+.Brand-From-add select:valid{
+    outline: none;
+    border: 2px solid rgb(39, 39, 39);
+}
+
+.Brand-From-add p{
+    font-size: 14px;
+    background-color: white;
+    position: absolute; 
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 10px;
+    margin-top: -10px;   
+    color: rgb(39, 39, 39); 
+}
+
+.Add-From-Product .NameAndPrice .Product-from-add{
+    width: 50%;
+    margin-left: 7%;
+}
+
+.Add-From-Product .ProductInfo .Info-from-add{
+    width: 80%;
+    margin-left: 7%;
+    margin-top: 20px;
+}
+
+.Info-from-add input{
+    width: 100%;
+    border: 2px solid rgb(211, 211, 211);
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    transition: .4s;    
+}
+
+.Info-from-add p{
+    font-size: 14px;
+    background-color: white;
+    position: absolute; 
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 10px;
+    margin-top: -10px;   
+    color: rgb(39, 39, 39);   
+}
+
+.Product-from-add input{
+    width: 100%;
+    border: 2px solid rgb(211, 211, 211);
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    transition: .4s;
+}
+
+.Product-from-add input:focus,
+.Product-from-add input:valid{
+    border: 2px solid rgb(39, 39, 39);
+}
+
+.Info-from-add input:focus,
+.Info-from-add input:valid{
+    border: 2px solid rgb(39, 39, 39);
+}
+
+.Price-from-add input{
+    width: 100%;
+    border: 2px solid rgb(211, 211, 211);
+    font-size: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 7px;
+    transition: .4s;
+}
+
+.Price-from-add input:focus,
+.Price-from-add input:valid{
+    border: 2px solid rgb(39, 39, 39);
+}
+
+.Price-from-add p{
+    font-size: 14px;
+    background-color: white;
+    position: absolute; 
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 10px;
+    margin-top: -10px;   
+    color: rgb(39, 39, 39);
+}
+
+.Product-from-add p{
+    font-size: 14px;
+    background-color: white;
+    position: absolute; 
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 10px;
+    margin-top: -10px;   
+    color: rgb(39, 39, 39);
+}
+
+.Add-From-Product .NameAndPrice .Price-from-add{
+    width: 20%;
+    margin-left: 10%;
+}
+
+.Image-Product-Group{
+    display: flex;
+}
+
+.Image-Product-Group .Product-Img-Add{
+    width: 25%;
+    margin-left: 6%;
+    margin-top: 30px;
+}
+
+.Product-Img-Add input{
+    display: none;
+}
+
+.Product-Img-Add p{
+    border: 2px solid rgb(39, 39, 39);
+    cursor: pointer;
+    color: rgb(39, 39, 39);
+    padding: 10px;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+
+.Product-Img-Add p:hover{
+    background-color: rgb(39, 39, 39);
+    border: 2px solid rgb(39, 39, 39);
+    color: white;
+}
+
+.Button-group-add-pro{
+    width: 100%;
+    margin-top: 38px;
+    margin-bottom: 10px;
+    
+}
+
+.Button-group-add-pro .cancle-add-pro{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    background: none;
+    border: none;
+    font-family: 'Prompt', sans-serif;
+    color: rgb(151, 151, 151);
+    transition: .4s;
+}
+
+.cancle-add-pro:hover{
+    color: rgb(39, 39, 39);
+    font-weight: 500;
+}
+
+.cancle-add-pro:focus,
+.Ok-add-pro:focus{
+    outline: none;
+}
+
+.Button-group-add-pro .Ok-add-pro{
+    margin-left: 50px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: rgb(151, 151, 151);
+    transition: .4s;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 24px;
+}
+
+.Ok-add-pro:hover{
+    background-color: rgb(39, 39, 39);
+    border-radius: 24px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.Product-Img-Add img{
+    width: 150px;
+}
+/*Product Modal*/
+
+
+/*Product Modal*/
+.Modal-Info-Pro{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal-Info-Pro.show{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.Modal-Info-Pro-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width:800px;
+    background: rgb(247, 247, 247);
+    padding: 35px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.Info-Product-Box{
+    display: flex;
+}
+
+.Product-Group-layout{
+    width: 50%;
+}
+
+ .Product-Group-layout #firstImg{
+    width:350px;
+    height: 350px;
+    border-radius: 8px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.Product-Group-layout #firstImg:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+ .Product-Group-layout .Group-II-Img{
+    display: flex;
+   margin-left: 25px;
+   margin-top: 15px;
+}
+
+.Product-Group-layout .Group-II-Img img{
+    width: 70px;
+    height: 70px;
+    margin-left: 25px;
+    border-radius: 8px;
+    transition: .4s;
+    
+    cursor: pointer;
+}
+
+.Product-Group-layout .Group-II-Img img:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.Product-Group-layout-II{
+    padding: 0px 20px;
+    text-align: left;
+    width: 50%;
+}
+
+.Product-Group-layout-II #Product-price{
+   font-size: 22px;
+   font-family: 'Oswald', sans-serif;
+}
+
+.BrandAndCate-InfoPro{
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(141, 141, 141);
+    cursor: default;
+}
+
+.InfoPro-Cate{
+    display: flex; 
+}
+
+.InfoPro-Cate p{
+    margin-left: 15px;
+}
+
+.InfoPro-Brand{
+    display: flex;
+    margin-top: 10px;
+}
+
+.InfoPro-Brand p{
+    margin-left: 15px;
+}
+
+.Size-Pro-Info-group{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Size-button-InfoPro{
+    text-align: center;
+    color: rgb(141, 141, 141);
+    cursor: pointer;
+    transition: .4s;
+    height: 60px;
+    width: 100%;
+}
+
+.Size-button-InfoPro label{
+    cursor: pointer;
+}
+
+.Size-button-InfoPro:hover{
+    color: rgb(32, 32, 32);
+}
+
+.button-InfoPro-Group{
+    width: 100%;
+}
+
+.button-InfoPro-Group button{
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 40px;
+    color: rgb(141, 141, 141);
+    border-radius: 24px;
+    border: none;
+    background: none;
+    transition: .4s;
+}
+
+.button-InfoPro-Group button:hover{
+    background: rgb(32, 32, 32);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.button-InfoPro-Group button:focus{
+    outline: none;
+}
+
+.Name-ProInfo-h1{
+    font-size: 40px;
+    cursor: default;
+}
+
+.Pid-ProInfo-lb{
+    color: rgb(141, 141, 141);
+}
+
+.Pdetail-ProInfo-p{
+    color: rgb(141, 141, 141);
+    cursor: default;
+}
+
+.Jamnun-ProInfo{
+    color: rgb(141, 141, 141);
+}
+
+.Add-Size-button-ProInfo{
+    width: 40%;
+    padding-right: 35px;
+    text-align: right;
+   padding-top: 10px;
+}
+
+.Add-Size-button-ProInfo a{
+    cursor: pointer;
+    color: rgb(141, 141, 141);
+    transition: .4s;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 24px;
+}
+
+.Add-Size-button-ProInfo a:hover{
+    color: white;
+    background-color: rgb(32, 32, 32);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.button-brand-group-product{
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.button-brand-group-product a{
+    color: rgb(179, 179, 179);
+    font-size: 14px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.button-brand-group-product a:hover{
+    color: rgb(32, 32, 32);
+}
+/*Product Modal*/
+
+/*Size Add Modal*/
+.Modal-Add-Size-Product{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal-Add-Size-Product.show{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.Modal-Add-Size-Product-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 300px;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.Modal-Add-Size-Product-body h1{
+    cursor: default;
+}
+
+.Modal-Add-Size-Product-body  .size-input-group{
+    width: 100%;
+    margin-top: 35px;
+}
+
+.Modal-Add-Size-Product-body  .size-input-group input{
+    width: 70%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 7px;
+    transition: .4s;
+}
+
+.Modal-Add-Size-Product-body  .size-input-group input:focus,
+.Modal-Add-Size-Product-body  .size-input-group input:valid{
+    outline: none;
+    border: 2px solid rgb(39, 39, 39);
+}
+
+.Modal-Add-Size-Product-body  .size-input-group input:focus ~ p,
+.Modal-Add-Size-Product-body  .size-input-group input:valid ~ p{
+    color: rgb(39, 39, 39);
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.Modal-Add-Size-Product-body  .size-input-group p{
+    position: absolute;
+    left: 63px;
+    pointer-events: none;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: rgb(39, 39, 39);
+    background: white;
+    transition: .4s;
+}
+
+#Size-input{
+    bottom: 197px;
+}
+
+#Size-input-amount{
+    bottom: 115px;
+}
+
+.size-button-group{
+    width: 100%;
+    margin-top: 45px;
+}
+
+.size-button-group a{
+    color: silver;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.size-button-group a:hover{
+    color: rgb(32, 32, 32);
+}
+
+.size-button-group button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    transition: .4s;
+    margin-left: 40px;
+    padding: 10px 20px;
+    border-radius: 24px;
+    color: silver;
+}
+.size-button-group button:focus{
+    outline: none;
+}
+
+.size-button-group button:hover{
+    background: rgb(39, 39, 39);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.Add-size-amount{
+    margin-left: 20px;
+}
+
+.bin-in-size-Proinfo{
+    background-color: rgba(32, 32, 32, 0.836);
+    padding: 2px 6px;
+  width: 30%;
+    border-radius: 7px;
+    margin-left: 25%;
+    color: rgba(243, 243, 243, 0.877);
+    opacity: 0;
+    font-size: 14px;
+}
+
+.bin-in-size-Proinfo.show{
+    opacity: 1;
+    transition: .5s;
+}
+
+.Size-layout-ProInfo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    width: 100%;
+    row-gap: 12px;
+}
+
+/*Size Add Modal*/
+
+/*Size Del Modal*/
+.Modal-Delete-Size{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal-Delete-Size.show{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+/*Size Del Modal*/
+/*Size Add amount Modal*/
+.Modal-Add-Amount-Size{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+.Modal-Add-Amount-Size.show{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+
+
+.Modal-Add-Amount-Size-body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 300px;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.Modal-Add-Amount-Size-body h1{
+    margin-bottom: 10px;
+}
+
+.inputdata-Add-amount-Proinfo{
+    width: 80%;
+    text-align: left;
+    margin-left: 10%;
+    padding-top: 20px;
+    
+}
+
+.inputdata-Add-amount-Proinfo select{
+    width: 100%;
+    height: 45px;
+    padding-left: 8px;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+}
+
+.inputdata-Add-amount-Proinfo select:focus,
+.inputdata-Add-amount-Proinfo input:focus{
+    outline: none;
+}
+
+.inputdata-Add-amount-Proinfo input{
+    width: 95%;
+    height: 40px;
+    padding-left: 8px;
+    border: 2px solid rgb(32, 32, 32);
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.inputdata-Add-amount-Proinfo input:focus,
+.inputdata-Add-amount-Proinfo input:valid,
+.inputdata-Add-amount-Proinfo select:focus,
+.inputdata-Add-amount-Proinfo select:valid{
+    border: 2px solid rgb(32, 32, 32);
+}
+
+.inputdata-Add-amount-Proinfo p{
+    margin-left: 8px;
+    position: absolute;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#select-size-Add-amount{
+    bottom: 215px;
+}
+
+#select-size-Add-amount-02{
+    bottom: 225px;
+}
+
+#input-Pro-Add-amount{
+    bottom: 128px;
+}
+
+.button-Pro-group-Delete-Amount{
+    width: 100%;
+    margin-top: 42px;
+    font-size: 16px;
+}
+
+.button-Pro-group-Delete-Amount a{
+    cursor: pointer;
+    color: rgb(211, 211, 211);
+    transition: .4s;
+}
+
+.button-Pro-group-Delete-Amount button{
+    margin-left: 20px;
+    padding: 4px 15px;
+    background: none;
+    border-radius: 24px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    color: rgb(211, 211, 211);
+    transition: .4s;
+}
+
+.button-Pro-group-Delete-Amount a:hover{
+    color:rgb(32, 32, 32) ;
+}
+
+.button-Pro-group-Delete-Amount button:hover{
+    background-color:rgb(32, 32, 32) ;
+    color: white;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+}
+/*Size Add amount Modal*/
+
+.CheckDuplicateCateName{
+    position: absolute;
+    cursor: default;
+    margin-left: 8.5%;
+    font-size: 13px;
+    margin-top:6px ;
+    color: rgb(209, 17, 4);
+    transition: .4s;
+}
+
+.CheckDuplicateCateName03,.CheckDuplicateCateName05,
+.CheckDuplicateCateName06,.CheckDuplicateCateName08,
+.CheckDuplicateCateName09,.CheckDuplicateCateName11,
+.CheckDuplicateCateName14,.CheckDuplicateCateName15,
+.CheckDuplicateCateName16,.CheckDuplicateCateName17,
+.CheckDuplicateCateName19,.CheckDuplicateCateName20,
+.CheckDuplicateCateName21,.CheckDuplicateCateName22{
+    position: absolute;
+    cursor: default;
+    margin-left: 8.5%;
+    font-size: 13px;
+    margin-top:6px ;
+    color: rgb(209, 17, 4);
+    transition: .4s;
+}
+
+.CheckDuplicateCateName07{
+    position: absolute;
+    cursor: default;
+    margin-left: 65%;
+    font-size: 13px;
+    margin-top:6px ;
+    color: rgb(209, 17, 4);
+    transition: .4s;
+}
+
+.CheckDuplicateCateName10{
+    position: absolute;
+    cursor: default;
+    margin-left: 56%;
+    font-size: 13px;
+    margin-top:6px ;
+    color: rgb(209, 17, 4);
+    transition: .4s;
+}
+
+.CheckDuplicateCateName12{
+    position: absolute;
+    cursor: default;
+    margin-left: 37%;
+    font-size: 13px;
+    margin-top:6px ;
+    color: rgb(209, 17, 4);
+    transition: .4s;
+}
+
+.CheckDuplicateCateName13{
+    position: absolute;
+    cursor: default;
+    margin-left: 66.5%;
+    font-size: 13px;
+    margin-top:6px ;
+    color: rgb(209, 17, 4);
+    transition: .4s;
+}
+
+.CheckDuplicateCateName02{
+    position: absolute;
+    cursor: default;
+    margin-left: 8.5%;
+    font-size: 13px;
+    margin-top:6px ;
+    color: rgb(4, 201, 46);
+    transition: .4s;
+}
+
+.CheckDuplicateCateName04,
+.CheckDuplicateCateName18,
+.CheckDuplicateCateName23{
+    position: absolute;
+    cursor: default;
+    margin-left: 8.5%;
+    font-size: 13px;
+    margin-top:6px ;
+    color: rgb(4, 201, 46);
+    transition: .4s;
+}
+
+.Hide{
+    opacity: 0;
+}
+
+.preloader-icon{
+    
+    position: absolute;
+    margin-left: 82%;
+    margin-top:-34px ;
+}
+
+.loadingProduct{
+    position: absolute;
+    margin-left: 57%;
+    margin-top: 44px ;
+}
+
+.redBox{
+    border: 2px solid rgb(209, 17, 4);
+}
+
+.circleIcon{
+    font-size: 8px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+.detailsAdminProduct{
+	position: relative;
+	width: 130px;
+	/* margin-right: 1rem; */
+    margin-left: 5%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: -8px;
+}
+
+.detailsAdminProduct[open] {
+	z-index: 1;
+}
+
+.AdminProductsummary{
+    margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgb(207, 207, 207);
+    list-style: none;
+    padding-left: 16.5px;
+}
+
+.AdminProductsummary::-webkit-details-marker {
+	display: none;
+}
+
+.detailsAdminProduct[open] .AdminProductsummary:before {
+	content: '';
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.AdminProductsummary:after {
+	content: '';
+	display: inline-block;
+	width: .5rem;
+	height: .5rem;
+    float: right;
+	border-bottom: 1px solid currentColor;
+	border-left: 1px solid currentColor;
+	border-bottom-left-radius: 2px;
+	transform: rotate(45deg) translate(50%, 0%);
+	transform-origin: center center;
+	transition: transform ease-in-out 100ms
+}
+
+.AdminProductsummary:focus {
+	outline: none;
+}
+
+.detailsAdminProduct[open] .AdminProductsummary:after {
+	transform: rotate(-45deg) translate(0%, 0%);
+}
+
+.detailsAdminProduct ul {
+	width: 100%;
+	background: rgb(207, 207, 207);
+	position: absolute;
+	top: calc(100% + .5rem);
+	left: 0;
+	padding: 1rem;
+	margin: 0;
+	box-sizing: border-box;
+	border-radius: 5px;
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+.detailsAdminProduct ul::-webkit-scrollbar{
+    display: none;
+}
+
+.detailsAdminProduct li {
+	margin: 0;
+	padding: 1rem 0;
+	border-bottom: 1px solid rgb(207, 207, 207);
+    list-style: none;
+}
+
+.detailsAdminProduct li:first-child {
+	padding-top: 0;
+}
+
+.detailsAdminProduct li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}

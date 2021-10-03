@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.body_HistoryOrder{
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+    padding-bottom:35px;
+}
+
+.horderheader{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 3%;
+    cursor: default;
+}
+
+.hordergroup{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 3%;
+    cursor: default;
+    padding: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.orderidAbdDateOfOrder{
+    display: flex;
+    width: 95%;
+    margin-left: 2.5%;
+    /* border-bottom: 1.5px solid silver; */
+    padding-bottom: 10px;
+}
+
+.statusOrderHisGroup{
+    width: 50%;
+    display: flex;
+    padding-top: 7px;
+}
+
+.statusOrderHisGroup_head{
+    width: 50%;
+    /* background: #000; */
+    text-align: right;
+    color: rgb(168, 168, 168);
+}
+
+.statusOrderHisGroup_status{
+    width: 50%;
+    text-align: right;
+}
+
+.orderidAbdDateOfOrder h3{
+    /* background: red; */
+    width: 15%;
+}
+
+.orderidAbdDateOfOrder h4{
+    color: rgb(168, 168, 168);
+    margin-top: 7px;
+    width: 35%;
+}
+
+.orderDetailBox_history{
+    width: 100%;
+     height: 100px; 
+     overflow: auto; 
+}
+
+.BoxToOneItemHistory{
+    width: 90%;
+    display: flex;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5%;
+}
+
+.BoxToOneItemHistory h6{
+    padding-top: 15px;
+}
+
+.BoxToOneItemHistory_name{
+    width: 70%;
+    padding-left: 20px;
+}
+
+.BoxToOneItemHistory_amount{
+    width: 30%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.yell{
+    color: rgb(247, 207, 33);
+}
+
+.gree{
+    color: rgb(52, 224, 17);
+}
+
+.redd{
+    color:rgb(212, 22, 22)
+}
+
+.TotalHistory_group{
+    width: 95%;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 2.5%;
+    margin-bottom: 15px;
+}
+
+.TotalHistory_Head{
+    width: 50%;
+    font-weight: 400;
+}
+
+.TotalHistory_Price{
+    width: 50%;
+    text-align: right;
+}
+
+
+.ToolOfHistoryGroup{
+    width: 95%;
+    display: flex;
+    margin-left: 2.5%;
+    height: 60px;
+    border-top: 1.5px solid silver;
+}
+
+.ToolOfHistoryGroup p{
+    padding-top: 20px;
+    width: 60%;
+}
+
+.ToolOfHistoryGroup button{
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 0 20px;
+    font-family: 'Prompt', sans-serif;
+    border: none;
+    border-radius: 7px;
+}
+
+.ToolOfHistory_info{
+    width: 17%;
+    background: rgb(224, 224, 224);
+}
+
+.ToolOfHistory_info:hover{
+    background: rgb(206, 205, 205);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.ToolOfHistory_tracking{
+    width: 17%;
+    margin-left: 3%;
+    background: rgb(44,44,44);
+    color: white;
+}
+
+.ToolOfHistory_tracking:hover{
+    background: rgb(26, 26, 26);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.ShippingFastIcon,.GoInfoIcon{
+    margin-top: 4px;
+    margin-left: -15px;
+    position: absolute;
+}
+
+
+
+.Modal_NoTracking_History{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal_NoTracking_History.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.Modal_NoTracking_History_body{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 25%;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.Button_Yep{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    /* background: #000; */
+    /* text-align: right; */
+}
+
+.Button_Yep button{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background: rgb(44,44,44);
+    cursor: pointer;
+}
+
+.Button_Yep button:hover{
+    background: rgb(27, 27, 27);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+
+
+
+
+.Modal_Tracking_History{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(82, 82, 82, 0.75);
+    display: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.Modal_Tracking_History.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.Modal_Tracking_History_body{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 20%;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: left;
+    border-radius: 24px;
+    /* height: 50%;
+    overflow: auto; */
+}
+
+.Box_follow_tracking{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 170px;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.timelineGroup ul{
+    list-style: none;
+}
+
+.timelineGroup ul li{
+    padding: 8px;
+    /* background: red; */
+    border-radius: 7px;
+    margin-bottom: 5px;
+    position: relative;
+    transform: translateX(20px);
+}
+
+.timeOftimelineTrackGroup ul{
+    list-style: none;
+}
+
+.timeOftimelineTrackGroup ul li{
+    padding: 8px;
+    /* background: red;  */
+    border-radius: 7px;
+    margin-bottom: 5px;
+    position: relative;
+    text-align: right;
+}
+
+.timelineGroup ul li:last-child{
+    margin-bottom: 0;
+}
+
+.timelineGroup ul li::after{
+    content: '';
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background: silver;
+    border-radius: 50%;
+    top:25px;
+    transform: translate(-50%,-50%);
+    left: -20px;
+}
+
+.timelineBox h6{
+    color: rgb(160, 160, 160);
+    font-weight: 300;
+}
+
+ .timeOftimelineTrackGroup h6{
+    color: rgb(160, 160, 160);
+    font-weight: 300;
+} 
+
+/* .timelineGroup::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background:silver;
+    transform: translateX(-50%);
+} */
+
+.timeOftimelineTrackGroup{
+    width: 49%;
+    /* background: #000; */
+}
+
+.timeOfEms{
+    width: 87%;
+}
+
+
+
+
+.Modal_Info_History{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(82, 82, 82, 0.75);
+    display: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.Modal_Info_History.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.Modal_Info_History_body{
+    position: absolute;
+    top: 45%;
+    left: 51%;
+    transform: translate(-50% , -50%);
+    width: 30%;
+    background: rgb(247, 247, 247);
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: left;
+    /*border-radius: 24px;
+     height: 50%;
+    overflow: auto; */
+}
+
+.header_orderinfo_his{
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 6px;
+}
+
+.orderinfo_his_namegroup{
+    width: 100%;
+    margin-top: 12px;
+    padding-bottom: 14px;
+    border-bottom: 1.5px solid black;
+}
+
+.odi_h_data_g{
+    display: flex;
+    margin-top: 3px;
+}
+
+.odi_h_data_h{
+    width: 24%;
+}
+
+.detail_orderinfo_h_group{
+    margin-top: 10px;
+    height: 180px;
+    overflow: auto;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid black;
+}
+
+.detailOrderList_h{
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+    
+}
+
+.detailOrderList_h img{
+    width: 10%;
+}
+
+.dthg_name{
+    margin-left: 2%;
+    width: 58%;
+    padding-top: 4px;
+    color: rgb(95, 95, 95);
+}
+
+.dthg_amount{
+    width: 10%;
+    padding-top: 10px;
+}
+
+.dthg_price{
+    width: 20%;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.sum_odi_h_g{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sum_head_h_g{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+}
+
+.sum_name_h_g{
+    text-align: right;
+    width: 70%;
+}
+
+.sum_num_h_g{
+    text-align: right;
+    width: 30%;
+}
+
+.thin{
+    font-weight: 400;
+}
+
+.closeMadalInfoHis{
+    position: absolute;
+    width: 180%;
+    text-align: right;
+    font-size: 18px;
+    color:silver;
+    transition: .4s;
+}
+
+.closeMadalInfoHis:hover{
+    color: black;
+}
+
+.tracking_number_group{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1.5px solid black;
+    padding-bottom: 5px;
+}
+
+.tracking_number_group h3{
+    padding-top: 6px;
+    margin-left: 4px;
+}
+
+.closetrackingYepp{
+    width: 100%;
+    height: 38px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    background: rgb(44,44,44);
+    color: white;
+    margin-top: 10px;
+    transition: .5s;
+}
+
+.closetrackingYepp:hover{
+    background: rgb(26, 26, 26);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

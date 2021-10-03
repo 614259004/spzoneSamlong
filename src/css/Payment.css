@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.Payment_body{
+    display: flex;
+    font-family: 'Prompt', sans-serif;
+    /* background-color: rgb(32, 32, 32); */
+   justify-content: center;
+}
+
+.Payment_card{
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 3%;
+    width: 60%;
+    height: 500px;
+    padding: 20px 40px 10px  40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden;
+    padding-bottom: 60px;
+    z-index: -1;
+    position: fixed
+}
+
+.head_payment_icon{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Payment_progress_bar{
+    display: flex;
+    width: 100%;
+}
+
+.Payment_progress_bar .Payment_step{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    
+}
+
+.Payment_progress_bar .Payment_step .Payment_bullet{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border: 2px solid silver;
+    display: inline-block;
+    border-radius: 50%;  
+    transition: 0.8s;
+}
+
+.Payment_progress_bar .Payment_step .Payment_bullet.active{
+    border-color: rgb(32, 32, 32);
+    background: rgb(32, 32, 32); 
+}
+
+.Payment_progress_bar .Payment_step:last-child .Payment_bullet:before,
+.Payment_progress_bar .Payment_step:last-child .Payment_bullet:after{
+    display: none;
+}  
+
+.Payment_progress_bar .Payment_step .Payment_bullet:before,
+.Payment_progress_bar .Payment_step .Payment_bullet:after{
+    position: absolute;
+    content: '';
+    bottom: 15px;
+    left: 35px;
+    height: 3px;
+    width: 425px;
+    background: silver;
+}
+
+.Payment_progress_bar .Payment_step .Payment_bullet.active:after{
+    background: rgb(32, 32, 32);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animated .5s linear forwards ;
+}
+
+@keyframes animated{
+    100%{
+        transform: scaleX(1) ;
+    }
+}
+
+.Payment_progress_bar .Payment_bullet.active .Payment_progress_p{
+    display: none;
+}
+
+.Payment_progress_bar .Payment_progress_p{
+    font-size: 23px;
+    color: silver;
+    margin-top: 3px;
+    transition: .5s;
+}
+
+.Payment_progress_bar .Payment_step .Payment_check{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+
+.Payment_progress_bar .Payment_step .Payment_check.active{
+    display: block;
+    color: #fff;
+}
+
+.payment_layout_form{
+    margin-top: 5%;
+    width: 300%;
+    height: 80%;
+    display: flex;
+    /* background: red; */
+}
+
+.payment_page{
+    width: 50%;
+    transition: margin-left 0.5s ease-in-out;
+    margin-left: 2%;
+}
+
+.payment_field{
+    width: 100%;
+    position: relative;
+    padding-left: 140px
+}
+
+
+.address_payment_group{
+    width: 98%;
+    border-bottom: 2px solid silver;
+    padding: 5px;
+    margin-bottom: 25px;
+    color: silver;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.address_payment_group:hover{
+    background: rgb(44, 44, 44);
+    color: white;
+    border-bottom: 2px solid rgb(44, 44, 44);
+}
+
+.group_ofAddressPayment{
+    width: 45%;
+    height: 245px;
+    overflow: auto;
+}
+
+.black_address{
+    background: rgb(22, 22, 22);
+    color: white;
+    border-bottom: 2px solid rgb(22, 22, 22);
+}
+
+.Payment_button_next{
+    margin-top: 40px;
+    width: 45%;
+    border: none;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    height: 40px;
+    border-radius: 24px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.Payment_button_next:hover{
+    background-color: rgb(32, 32, 32);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.arrow_next_payment{
+    margin-top: 5px;
+    position: absolute;
+}
+
+
+.payment_container{
+    display: flex;
+    width: 66%;
+    /* background: #000; */
+
+}
+
+.payment_bill{
+    width: 50%;
+    cursor: default;
+}
+
+.pay_data_group{
+    width: 80%;
+    /* background: #000; */
+    
+}
+
+.payData{
+    display: flex;
+    font-size: 14px;
+    color: silver;
+    padding-bottom: 3px;
+    border-bottom: 2px solid rgb(165, 165, 165);
+}
+
+.payData_02{
+    display: flex;
+    font-size: 14px;
+    color: silver;
+    padding-bottom: 5px;
+   padding-top: 5px;
+}
+
+.payData_03{
+    font-size: 14px;
+    color: silver;
+    border-top: 2px solid rgb(165, 165, 165);
+    padding-top: 8px;
+}
+.payData_04{
+    display: flex;
+    font-size: 14px;
+    color: silver;
+    padding-top: 8px;
+}
+
+.head_payment_product{
+    width: 60%;
+}
+
+.head_payment_amount{
+    width: 20%;
+    text-align: center;
+}
+
+.head_payment_price{
+    width: 20%;
+    text-align: center;
+}
+
+.head_payment_product_02{
+    width: 60%;
+}
+
+.head_payment_amount_02{
+    width: 20%;
+    text-align: center;
+}
+
+.head_payment_price_02{
+    width: 20%;
+    text-align: right;
+    color: rgb(44, 44, 44);
+}
+
+.total_name_payment{
+    width: 70%;
+    text-align: right;
+    font-size: 16px;
+}
+
+.Total_number_payment{
+    width: 30%;
+    text-align: right;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(44, 44, 44);
+}
+
+.Total_number_payment_sale{
+    width: 30%;
+    text-align: right;
+    font-size: 14px;
+    color: rgb(44, 44, 44);
+}
+
+.bank_admin_group{
+    display: flex;
+    cursor: default;
+    align-items: center;
+    width: 100%;
+    margin-top: -12%;
+    margin-left: 20%;
+}
+
+.bank_admin_group img{
+    width:50px;
+}
+
+.bank_data{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ImgFileOrder{
+    display: none;
+}
+
+
+
+.bill_img{
+    width: 55%;
+    height: 232px;
+    margin-left: 29%;
+    margin-top: 5%;
+    margin-bottom: 1.5%;
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 24px;
+}
+
+.bill_img:hover{
+    background: rgb(44,44,44);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.bill_img p {
+    width: 100%;
+    margin-top: 40%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bill_img img{
+    width: 100%;
+    border-radius: 24px;
+   
+}
+
+.input_add_img_payment{
+    width: 100%;
+    /* background: #000; */
+    text-align: center;
+}
+
+.payment_add_evidence{
+    width: 40%;
+    border-left: 2px solid black;
+    /* background: red; */
+}
+
+.button_group_payment{
+    /* background: #000; */
+    width: 60%;
+    margin-top: 50px;
+    
+}
+
+.button_group_payment_back{
+    width: 47.5%;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    background-color: rgb(209, 209, 209);
+    transition: .4s;
+}
+
+
+.button_group_payment_back:hover{
+    background-color: rgb(189, 189, 189);
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.button_group_payment_next{
+    width: 47.5%;
+    margin-left: 5%;
+    font-size: 16px;
+    height: 40px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    border-radius: 24px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    transition: .4s;
+    border: none;
+}
+
+.button_group_payment_next:hover{
+    background-color: rgb(32, 32, 32);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.button_group_payment_back_icon{
+    margin-top: 5.5px;
+    position: absolute;
+    margin-left: -1%;
+}
+
+.button_group_payment_next_icon{
+    margin-top: 4.5px;
+    position: absolute;
+    
+}
+
+.AddNewAddress_Payment{
+    color: silver;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.AddNewAddress_Payment:hover{
+    color: rgb(44, 44, 44);
+}
+
+
+
+/* model Add Address Payment*/
+.Modal_Add_Address_Payment{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal_Add_Address_Payment_body{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 450px;
+    background: #fff;
+    padding: 30px 30px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Modal_Add_Address_Payment_body h2{
+    cursor: default;
+}
+
+.Modal_Add_Address_Payment.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.input_Address_Payment_Name,
+.input_Address_Payment_Province,
+.input_Address_Payment_PostCode,
+.button_Address_Payment_add{
+    width: 100%;
+    margin-top: 22px;
+}
+
+.input_Address_Payment_Name input,
+.input_Address_Payment_Province input,
+.input_Address_Payment_PostCode input{
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: 2px solid gray;
+    background: transparent;
+    font-family: 'Prompt', sans-serif;
+    transition: .3s;
+    outline: none;
+    font-size: 16px;
+}
+
+.button_Address_Payment_add button{
+    height: 45px;
+    width: 90%;
+    background: rgb(44, 44, 44);
+    border: none;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: .3s;
+    outline: none;
+}
+
+.button_Address_Payment_add button:hover{
+    background-color: rgb(32, 32, 32);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.input_Address_Payment_Name input:hover,
+.input_Address_Payment_Name input:focus,
+.input_Address_Payment_Province input:hover,
+.input_Address_Payment_Province input:focus,
+.input_Address_Payment_PostCode input:hover,
+.input_Address_Payment_PostCode input:focus{
+    border: 2px solid rgb(32, 32, 32);
+}
+
+
+.input_Address_Payment_No_moo{
+    width: 100%;
+    margin-top: 18px;
+}
+
+.input_Address_Payment_No,
+.input_Address_Payment_canton{
+    width: 32.5%;
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: 2px solid gray;
+    background: transparent;
+    font-family: 'Prompt', sans-serif;
+    transition: .3s;
+    outline: none;
+    font-size: 16px;
+}
+
+.input_Address_Payment_Moo,
+.input_Address_Payment_district{
+    width: 32.5%;
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: 2px solid gray;
+    background: transparent;
+    font-family: 'Prompt', sans-serif;
+    transition: .3s;
+    outline: none;
+    font-size: 16px;
+    margin-left: 4%;
+}
+
+.input_Address_Payment_Moo:hover,
+.input_Address_Payment_No:hover,
+.input_Address_Payment_Moo:focus,
+.input_Address_Payment_No:focus,
+.input_Address_Payment_district:hover,
+.input_Address_Payment_district:focus,
+.input_Address_Payment_canton:hover,
+.input_Address_Payment_canton:focus{
+    border: 2px solid rgb(32, 32, 32);
+}
+
+
+.input_Address_Payment_canton_district{
+    width: 100%;
+    margin-top: 18px;
+}
+
+.Close_Modal_Add_Address_Payment{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-top: -9%;
+}
+
+/* model Add Address Payment*/
+
+
+
+.Modal_Finish_cart{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.842);
+    display: none;
+    opacity: 0;
+}
+
+.Modal_Finish_cart.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.Modal_Finish_cart_body{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 450px;
+    background: #fff;
+    padding: 30px 30px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Modal_Finish_cart_body {
+    cursor: default;
+}
+
+.Button_group_modal_fn_cart{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.Button_Back_to_shopping{
+    width: 30%;
+    height: 40px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    margin-right: 10%;
+    border: none;
+    background: rgb(44,44,44);
+    transition: .5s;
+    color: white;
+    border-radius: 24px;
+}
+
+.Button_go_home{
+    width: 30%;
+    height: 40px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;    
+    border: none;
+    background: rgb(44,44,44);
+    transition: .5s;
+    color: white;
+    border-radius: 24px;
+}
+
+.Button_Back_to_shopping:hover,
+.Button_go_home:hover{
+    background-color: rgb(32, 32, 32);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.orderInFoLastPayment{
+    height: 170px;
+    overflow: auto;
+}

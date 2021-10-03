@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.Profile_background{
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    position: absolute;
+}
+
+.Profile_body{
+    display: flex;
+    width: 50%;
+    margin-left: 23.5%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: rgb(243, 243, 243);
+    border-radius: 24px;
+    margin-top: 8.8%;
+}
+
+.Profile_body_Img_group{
+    width: 40%;
+    text-align: center;
+}
+
+.border_of_img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    box-shadow: rgba(189, 189, 189, 0.356) 0px 1px 2px 0px;
+}
+
+.border_of_img img{
+    width: 95%;
+    border-radius: 50%;
+    margin-top: 2.5%;
+    justify-items: center;
+}
+
+.Profile_body_Data_group{
+    width: 60%;
+    padding-left: 20px;
+    cursor: default;
+}
+
+.Profile_Data_Name_group01{
+    display: flex;
+}
+
+.Profile_Data_Name_group02{
+    display: flex;
+    margin-top: 15px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.Profile_Data_Address_group{
+    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+}
+
+.Data_Name_group02_head{
+    width: 25%;
+    color: rgb(87, 87, 87);
+}
+
+.Profile_Data_Name_group01 h2{
+    font-size: 34px;
+}
+
+.Data_Name_group02_Sum{
+    margin-left: 10px;
+    width: 75%;
+    font-weight: lighter;
+    color: rgb(122, 122, 122);
+}
+
+.addressShow_head{
+    width: 25%;
+    color: rgb(87, 87, 87);
+}
+
+.addressShow_Ex01{
+    font-size: 16px;
+    width: 75%;
+    font-weight: lighter;
+    color: rgb(122, 122, 122);
+}
+
+.Profile_Data_Name_group{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.editProfileButton{
+    width: 45%;
+    font-size: 15px;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+    border-radius: 24px;
+    height: 40px;
+}
+
+.editProfileButton:hover,
+.AddressShowbutton:hover{
+    background-color: rgb(44,44,44);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.AddressShowbutton{
+    width: 45%;
+    font-size: 15px;
+    padding: 8px;
+    margin-left: 10%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+    border-radius: 24px;
+    height: 40px;
+}
+
+.editProicon,.addressshowicon{
+    margin-top: 1px;
+    position: absolute;
+    margin-left: -20px;
+}
+
+.ProfileBackHomeX{
+    position: absolute;
+    margin-left: 49%;
+    margin-top: -2%;
+    color: rgb(87, 87, 87);
+    transition: .4s;
+}
+
+.ProfileBackHomeX:hover{
+    color: rgb(44,44,44);
+}
+
+
+
+
+
+
+.Modal_Edit_profile{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal_Edit_profile.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.Modal_Edit_profile_body{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 40%;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.cardOfEditProfile{
+    display: flex;
+    margin-top: 25px;
+}
+
+
+.left_cardOfEditProfile{
+    width: 45%;
+}
+
+.right_cardOfEditProfile{
+    width: 55%;
+    margin-top: -10px;
+}
+
+.Modal_Edit_profile_body h2{
+    font-size: 30px;
+}
+
+.Modal_Edit_profile_body h4{
+    font-size: 14px;
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+    margin-top: 15px;
+    transition: .4s;
+}
+
+.Modal_Edit_profile_body h4:hover{
+    color: rgb(44,44,44);
+}
+
+.Img_edit_profile_group{
+    width: 100%;
+}
+
+.Img_edit_profile_group img {
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.Img_edit_profile_group input{
+    display: none;
+}
+
+.edit_profile_group_input{
+    margin-top: 14px;
+    width: 100%;
+}
+
+.edit_profile_group_input input{
+    width: 70%;
+    padding: 8px 13px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 24px;
+    border: 2px solid rgb(192, 192, 192);
+    transition: .5s;
+    font-family: 'Prompt', sans-serif;
+    padding-left: 25px;
+}
+
+.edit_profile_group_input input:hover,
+.edit_profile_group_input input:focus{
+    border: 2px solid rgb(44,44,44);
+}
+
+
+.editProfileSave{
+    width: 90%;
+    margin-top: 35px;
+    font-family: 'Prompt', sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: rgb(44,44,44);
+    border-radius: 24px;
+    transition: .4s;
+}
+
+.editProfileSave:hover{
+    background: rgb(34, 34, 34);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.boxOfCloseModalProfile{
+    width: 90%;
+    text-align: right;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.ProfileColseModaledit{
+    position: absolute;
+    color: rgb(87, 87, 87);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.ProfileColseModaledit:hover{
+    color: black;
+}
+
+
+
+
+.Modal_Check_closeEdit_profile{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal_Check_closeEdit_profile.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+
+.Modal_Check_closeEdit_profile_body{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 30%;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.Modal_Check_closeEdit_profile_body h4{
+    cursor: default;
+    font-size: 18px;
+}
+
+.buttongroup_checkeditProfile{
+    width: 100%;
+    margin-top: 22px;
+}
+
+.buttongroup_checkeditProfile .NoIwantEdit_button   {
+    margin-right: 10px;
+    width: 25%;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    font-size: 15.5px;
+    border: none;
+    padding: 6px 20px;
+    color: rgb(44,44,44);
+    background: transparent;
+    border-radius: 24px;
+    transition: .5s;
+}
+
+.buttongroup_checkeditProfile .YesIwantcancel_button{
+    width: 25%;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    font-size: 15.5px;
+    border: none;
+    padding: 6px 20px;
+    color: rgb(44,44,44);
+    background: transparent;
+    border-radius: 24px;
+    transition: .5s;
+}
+
+.buttongroup_checkeditProfile .YesIwantcancel_button:hover,
+.buttongroup_checkeditProfile .NoIwantEdit_button:hover{
+    color: white;
+    background: rgb(44,44,44);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+
+
+
+
+
+
+
+.Modal_All_address_profile{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal_All_address_profile.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.Modal_All_address_profile_body{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 40%;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+    overflow: scroll;
+}
+
+.addressScollbar{
+    overflow: scroll;
+    height: 400px;
+}
+
+.Alladdress_group{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    background: rgb(243, 243, 243);
+    padding: 10px;
+}
+
+.Alladdress_icon_group{
+    width: 90%;
+    text-align: left;
+    cursor: default;
+}
+
+.Alladdress_icon_group_Delete_edit{
+    width: 10%;
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(122, 122, 122);
+}
+
+.Alladdress_icon_group_Delete_edit p{
+    cursor: pointer;
+    transition: .5s;
+    font-size: 17px;
+}
+
+.Alladdress_icon_group_Delete_edit p:hover{
+    color: rgb(44,44,44);
+}
+
+.button_add_address_profile{
+    width: 93.5%;
+    margin-left: 3.2%;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background-color: rgb(44,44,44);
+    transition: .5s;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.button_add_address_profile:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: rgb(31, 31, 31);
+}
+
+
+
+
+
+
+
+.Modal_Del_Address_profile{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(216, 216, 216, 0.75);
+    display: none;
+    opacity: 0;
+}
+
+.Modal_Del_Address_profile.show{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+
+.Modal_Del_Address_profile_body{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 25%;
+    background: #fff;
+    padding: 20px 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.123) 0px 2px 16px 0px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.groupButtonDelAddress{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.input_Address_Payment_Province select{
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 90%;
+    border: 2px solid rgb(122, 122, 122);
+    font-family: 'Prompt', sans-serif;
+    outline: none;
+    font-size: 16px;
+    border-radius: 24px;
+}

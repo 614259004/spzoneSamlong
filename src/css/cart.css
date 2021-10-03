@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.cart_Body{
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+}
+
+.Cart_table{
+    width: 55%;
+    /* background: red; */
+    margin-left: 5%;
+    margin-top: 4%;
+    color: rgb(145, 145, 145);
+}
+
+.head_tabel_cart{
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    cursor: default;
+}
+
+.product_cart{
+    width: 50%;
+}
+
+.price_cart{
+    width: 10%;
+    text-align: center;
+    cursor: default;
+}
+
+.amount_cart{
+    width: 10%;
+    text-align: center;
+    cursor: default;
+}
+
+.total_cart{
+    width: 15%;
+    text-align: center;
+    cursor: default;
+}
+
+.clear_cart{
+    width: 5%;
+    
+}
+
+.Product_tabel_cart{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid silver;
+    align-items: center;
+}
+
+.product_cart_02 img{
+    width: 100px;
+    cursor: default;
+}
+
+
+.product_cart_02{
+    width: 50%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: default;
+}
+
+.clear_cart button{
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 24px;
+    background-color: transparent;
+    transition: .4s;
+    padding: 5px;
+    padding-left: 5.5px;
+    color: rgb(139, 139, 139);
+}
+
+.clear_cart button:hover{
+    background-color:rgba(39, 39, 39, 0.596);
+    color: rgb(247, 247, 247);
+}
+
+.inFoCart_Head{
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.inFoCartbody{
+    background: rgb(247, 247, 247);
+    height: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: default;
+    border-radius: 7px;
+}
+
+.info_cart_head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    /* background: pink; */
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom:2px solid rgb(212, 212, 212);
+}
+
+.info_cart_head h3{
+    padding-left: 20px;
+}
+
+.info_cart_bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: rgb(236, 236, 236); 
+    font-size: 18px;
+    font-weight: 500;
+    border-top:2px solid rgb(236, 236, 236);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.info_cart_bottom_01{
+    width: 50%;
+}
+
+.info_cart_bottom_01 h3{
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.info_cart_bottom_02{
+    width: 50%;
+    text-align: right;
+}
+
+.info_cart_bottom_02 h3{
+    padding-right: 20px;
+}
+
+.info_cart_Center{
+    height: 140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.info_cart_one{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    /* background: red; */
+}
+
+.info_cart_Center_subtotal{
+    padding-left: 20px;
+    width: 50%;
+    color: rgb(158, 158, 158);
+}
+
+.info_cart_Center_subtotal_price{
+    text-align: right;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.cart_Info_checkout{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.LinkInfoCArtCheckout{
+    width: 100%;
+}
+
+.LinkInfoCArtCheckout button{
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background: rgb(44,44,44);
+    border: none;
+    font-size: 16px;
+    border-radius: 7px;
+    transition: .5s;
+}
+
+.LinkInfoCArtCheckout button:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: white;
+    background: rgb(27, 27, 27);
+    
+}
+
+.select_promotion_cart{
+    width: 92%;
+    margin-left: 4%;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 4px;
+    height: 30px;
+    border: 1.5px solid rgb(44,44,44);
+}
+
+.AddCartMai{
+    width: 100%;
+    padding-top: 18%;
+}
+
+.AddCartMai h1{
+    cursor: pointer;
+    padding: 20px;
+    width: 6%;
+    padding-top: 23px;
+    margin-left: 42%;
+    text-align: center;
+    border: 3px solid silver;
+    border-radius: 50%;
+    color: silver;
+
+    transition: .4s;
+}
+
+.AddCartMai h1:hover{
+    border: 3px solid rgb(44,44,44);
+    background: rgb(44,44,44);
+    color: white;
+}
