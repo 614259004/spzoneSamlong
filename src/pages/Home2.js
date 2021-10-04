@@ -44,7 +44,7 @@ const Home2 = () => {
 
             <div className="videoDiv">
                 <video autoPlay loop muted  > 
-                    <source src='assets/home/index1.mp4' type="video/mp4"/>
+                    <source src='https://firebasestorage.googleapis.com/v0/b/spzone-fb1ee.appspot.com/o/video%2Findex1.mp4?alt=media&token=cee01f9c-6ebe-4d1a-b692-9e0ef0368748' type="video/mp4"/>
                 </video>
             </div>
             
