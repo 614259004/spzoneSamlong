@@ -3,9 +3,11 @@ import './AdminSidebar.css';
 import { Link } from 'react-router-dom'
 import {Adminbardata} from './Adminbardata';
 import * as axiosData from '../service/Service';
+import {  useHistory } from 'react-router-dom';
 
 
 function AdminSidebar() {
+  const history = useHistory();
 
   const cusData ={
     C_customerid:'',
@@ -31,6 +33,12 @@ function AdminSidebar() {
     })
         
     }
+    const LogOut = () =>{
+      localStorage.removeItem('UserId');
+      history.push("/Home");
+      window.location.reload();
+  }
+
 
 
 
@@ -55,7 +63,9 @@ function AdminSidebar() {
                   )
         })} 
       </div> 
+      <h5 className="logoutAdmin" onClick={()=>{LogOut();}}>Log out</h5>
       <div className="Admin-Profile">
+        
         <a href="">
           {userData.C_name}
         </a>
