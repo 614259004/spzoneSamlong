@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 
-let url = "http://localhost/finalspzoneback/public";
+let url = "http://spzone.cyberlifecafe.com";
 let url2 = "https://trackapi.thailandpost.co.th/post/api/v1/track";
 
 let axiosConfig = {
