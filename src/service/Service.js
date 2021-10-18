@@ -12,11 +12,18 @@ let axiosConfig = {
     }
 }
 
+let corsConfig ={
+    headers: {
+        'Access-Control-Allow-Origin' : '*',
+        'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+        }
+}
+
 //-------------------------------------------------------------------------
 
 async function axiosMethodPost(path,params){
     try {
-        const result = await axios.post(url+path,params);
+        const result = await axios.post(url+path,params,corsConfig);
         return result.data;
     } 
     catch (error) {
@@ -41,7 +48,7 @@ async function axiosMethodPostEms(params){
 
 async function axiosMethodPut(path,params){
     try {
-        const result = await axios.put(url+path,params);
+        const result = await axios.put(url+path,params,corsConfig);
         return result.data;
     } 
     catch (error) {
@@ -51,7 +58,7 @@ async function axiosMethodPut(path,params){
 
 async function axiosMethodGet(path){
     try {
-        const result = await axios.get(url+path);
+        const result = await axios.get(url+path,corsConfig);
         return result.data;
     } 
     catch (error) {
