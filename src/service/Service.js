@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 
-let url = "http://spzoneonline.com";
+let url = "https://spzoneonline.com";
 let url2 = "https://trackapi.thailandpost.co.th/post/api/v1/track";
 
 let axiosConfig = {
